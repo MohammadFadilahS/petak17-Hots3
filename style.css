@@ -1,0 +1,681 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(https://i.pinimg.com/originals/42/e7/c8/42e7c8c6e2bfbb1809468f9f917a3612.gif) no-repeat fixed center;
+    background-size: 1365.5px 624.5px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 900px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 30px 10px;
+    border: 8px solid rgb(233, 233, 233);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.7s ease;
+     
+}
+.container .card h1 {
+ color: rgba(124, 245, 31, 0.945);
+ justify-content: center;
+ font-size: 46px;
+ letter-spacing: -8px;
+ font-family: cursive ;
+ transform: translateY(55px);
+ font-weight:600;
+ }
+ .container .card p {
+     color: black ;
+     width: 720;
+     height: 360;
+     font-weight: 500;
+     font-size: 20.9px;
+     padding-left: 5px;
+     padding-right: 5px;
+     text-align:center;
+     word-break:keep-all;
+     font-family: cursive;
+     transform: scale(0) translateY(400px);
+ }
+ p span1 {
+color:rgb(39, 243, 16);
+ }
+ p span2 {
+    color:rgb(243, 16, 16);
+     }
+     p span3 {
+        color:brown;
+         }
+         p span4 {
+            color:rgb(255, 136, 9);
+             }
+ .card:hover h1 {
+     transform:translateY(-45px);
+     transition: .5s .3s; 
+     color: yellowgreen;
+ }
+ .card:hover p {
+    transform: scale(1) translateY(-45px);
+    transition: .3s .4s; 
+}
+
+.quiz_box,
+.card,
+.card2,
+.benar,
+.kalah
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: cursive;
+}
+footer button
+{
+position: absolute;
+top: 93%;
+left: 17%;
+transform: translate(-50%,-50%);
+box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+font-family: cursive;
+}
+footer button1
+{
+top: 93%;
+left: 85.5%;
+transform: translate(-50%,-50%);
+box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+font-family: cursive;
+position: absolute;
+}
+.icon.tick
+{
+position: absolute;
+top: 50.7%;
+left: 88.5%;
+transform: translate(-50%,-50%);
+box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+font-family: cursive;
+}
+.icon.cross3  {
+    position: absolute;
+    top: 63.2%;
+    left: 88.5%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+    font-family: cursive; 
+}
+.icon.cross4{
+    position: absolute;
+    top: 76%;
+    left: 88.3%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+    font-family: cursive; 
+}
+.icon.cross1
+{
+    position: absolute;
+    top: 37.8%;
+    left: 88.5%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.164);
+    font-family: cursive; 
+}
+
+.quiz_box{
+    width: 550px;
+    height: 501px;
+    background: #fff;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: auto;
+    transition: all 0.5s ease;  
+}
+.card2 {
+    background-color: rgb(253, 253, 253);
+    top:51%;
+    padding:28px 5px 4px 4px;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    border: 8px solid rgb(214, 214, 217);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content:baseline;
+    align-items:center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.7s ease;
+}
+.card2 spanc{
+    color: black ;
+    width: 720;
+    height: 360;
+    font-weight: 500;
+    font-size: 24px;
+    text-align:center;
+    font-family: cursive;
+    padding-top: 100;
+    word-break:keep-all;
+}
+ .card2 img {
+    width: 230px;
+    height: 180px;
+    top: 32%;
+    left: 23%;
+    position: absolute;
+}
+.benar {
+    background-color: rgb(253, 253, 253);
+    top:51%;
+    padding:28px 5px 4px 4px;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    border: 8px solid rgb(214, 214, 217);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content:baseline;
+    align-items:center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.7s ease;
+}
+.benar spand{
+    color: black ;
+    width: 720;
+    height: 360;
+    font-weight: 500;
+    font-size: 24px;
+    text-align:center;
+    font-family: cursive;
+    padding-top: 100;
+    word-break:keep-all;
+}
+ .benar img {
+    width: 230px;
+    height: 180px;
+    top: 32%;
+    left: 23%;
+    position: absolute;
+}
+.kalah {
+    background-color: rgb(253, 253, 253);
+    top:51%;
+    padding:28px 5px 4px 4px;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    border: 8px solid rgb(214, 214, 217);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content:baseline;
+    align-items:center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.7s ease;
+}
+.kalah span3{
+    color: black ;
+    width: 720;
+    height: 360;
+    font-weight: 500;
+    font-size: 24px;
+    text-align:center;
+    font-family: cursive;
+    padding-top: 100;
+    word-break:keep-all;
+}
+ .kalah img {
+    width: 230px;
+    height: 180px;
+    top: 32%;
+    left: 23%;
+    position: absolute;
+}
+
+ .option_list div:nth-last-child(3).activeBackground{
+background: rgb(182, 255, 167);
+border: 1px solid #5cd554;
+}
+.option_list div:nth-last-child(2).activeBgcross3{
+    background: rgb(255, 167, 167);
+    border: 1px solid #d55454;
+}
+.option_list div:nth-last-child(4).activeBgcrossatas{
+    background: rgb(255, 167, 167);
+    border: 1px solid #d55454;
+}
+.option_list div:nth-child(4).activeBgcross1{
+    background: rgb(255, 167, 167);
+    border: 1px solid #d55454;
+}
+.quiz_box.activeQuiz,
+.card.activeCard,
+.icon.tick.activeTick,
+.icon.cross1.activeCross1,
+.icon.cross3.activeCross3,
+.icon.cross4.activeCross4,
+.card2.activeCard2,
+.benar.activeBenar,
+.kalah.activeKalah
+{
+    opacity: 1;
+    z-index: 5;
+    pointer-events:auto;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+.quiz_box header .title{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.quiz_box section{
+    padding: 20px 30px 20px 30px;
+    background: #fff;
+}
+section .que_text{
+    font-size: 21px;
+    font-weight: 505;
+    margin-bottom: 10px;
+}
+
+.quiz_box section .option_list{
+    padding: 8px 0px;
+    display: block;   
+}
+section .option_list div:nth-last-child(3) {
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: absolute;
+    align-items: center;
+    transition: all 0.2s ease;   
+}
+section .option_list div:nth-last-child(2) {
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: absolute;
+    align-items: center;
+    transition: all 0.2s ease;   
+}
+section .option_list div:nth-last-child(4) {
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: absolute;
+    align-items: center;
+    transition: all 0.2s ease;   
+}
+section .option_list div:nth-child(4){
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: absolute;
+    align-items: center;
+    transition: all 0.2s ease; 
+    }
+
+section .option_list .option1{
+    background: aliceblue;
+    border: 1px solid #8fc0fc;
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+    font-size: 17;
+    font-weight: 530;
+}
+ section .option_list .option1:last-child{
+    margin-bottom: 0px;
+}
+ section .option_list .option1:hover{
+    color: #000000;
+    background: #c9e7ff;
+    border: 1px solid #b8c0ff;
+}
+section .option_list .option2 {
+    background: aliceblue;
+    border: 1px solid #8fc0fc;
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+    font-size: 17;
+    font-weight: 530;
+}
+ section .option_list .option2::last-child{
+    margin-bottom: 0px;
+}
+ section .option_list .option2:hover{
+    color: #000000;
+    background: #c9e7ff;
+    border: 1px solid #b8c0ff;
+}
+section .option_list .option3{
+    background: aliceblue;
+    border: 1px solid #8fc0fc;
+    border-radius: 5px;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+    font-size: 17;
+    font-weight: 530;
+}
+ section .option_list .option3:last-child{
+    margin-bottom: 0px;
+}
+ section .option_list .option3:hover{
+    color: #000000;
+    background: #c9e7ff;
+    border: 1px solid #b8c0ff;
+}
+section .option_list .option4{
+    background: aliceblue;
+    border: 1px solid #8fc0fc;
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+    font-size: 17;
+    font-weight: 530;
+}
+ section .option_list .option4:last-child{
+    margin-bottom: 0px;
+}
+ section .option_list .option4:hover{
+    color: #000000;
+    background: #c9e7ff;
+    border: 1px solid #b8c0ff;
+}
+
+section .option_list .icon {
+    height: 27px;
+    width: 27px;
+    border: 2px solid transparent;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 24px;
+    pointer-events: none;
+}
+ .icon.tick{
+    color: #00a326;
+    border: 1px solid #00a326;
+    background: #22fb55;
+    border-radius: 75px;
+    line-height: 15px;
+    list-style: none;
+    margin: 0 3px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    cursor:context-menu;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.icon.cross4{
+    color: #cd0014;
+    size: 30px;
+    background: #fd4343;
+    border-color: 1px solid #af0011;
+    border-radius: 75px;
+    line-height: 15px;
+    list-style: none;
+    margin: 0 3px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    cursor:context-menu;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.icon.cross3{
+    color: #cd0014;
+    size: 30px;
+    background: #fd4343;
+    border-color: 1px solid #af0011;
+    border-radius: 75px;
+    line-height: 15px;
+    list-style: none;
+    margin: 0 3px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    cursor:context-menu;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+ .icon.cross1{
+    color: #cd0014;
+    size: 30px;
+    background: #fd4343;
+    border-color: 1px solid #af0011;
+    border-radius: 75px;
+    line-height: 15px;
+    list-style: none;
+    margin: 0 3px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    cursor:context-menu;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+footer{
+    height: 65px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 1px solid lightgrey;
+}
+footer button{
+    height: 40px;
+    padding: 0px 13px;
+    left: 16.5%;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background: #007bff;
+    border: 2px solid #0171e9;
+    line-height: 10px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+footer button:hover{
+    background-color: #0263ca;
+}
+footer button.activeButton {
+    opacity: 1;
+    z-index: 5;
+    pointer-events:auto;
+    transform:translate(-50%, -50%)  scale(1);
+}
+
+footer button1 {
+    height: 38.1px;
+    width: 78px;
+    padding: 0px 30px 0 14px;
+    left: 84.4%;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    line-height: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background: #007bff;
+    border: 2px solid #0171e9;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+footer button1:hover{
+    background-color: #0263ca;
+}
+footer button1.activeButton1 {
+    opacity: 1;
+    z-index: 5;
+    pointer-events:auto;
+    transform:translate(-50%, -50%)  scale(1);
+}
+footer button3 {
+    height: 38px;
+    width: 82px;
+    padding: 0px 18px 0 13px;
+    left: 84.4%;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    line-height: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background: #ff1313;
+    border: 2px solid #ff1111;
+    transition: all 0.3s ease;
+}
+footer button3:hover{
+    background-color: #ef0404;
+}
+footer button3.activeButton3 {
+    opacity: 0;
+    z-index: 5;
+    pointer-events:auto;
+    transform: scale(0);
+}
+footer h3 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color:rgb(255, 238, 0);
+    transform:  scale(0.95);
+}
+footer h3.activeH3 {
+    opacity: 0;
+    z-index: 5;
+    pointer-events:auto;
+    transform: scale(1);
+}
+
+.buttons button {
+    top: 45%;
+    right: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 68px;
+    width: 420;
+    padding: 0 13px;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background: #007bff;
+    border: 3px solid #0171e9;
+    line-height: 10px;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #0263ca;
+}
